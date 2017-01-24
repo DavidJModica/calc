@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="design.css">
+	</head>
+
+<title>Gauntlet Calculator</title>
+
+<body>
+<div id=builder>
+	<div id="loader">
+		<h1>Loading calculator...</h1>
+	</div>
+	<div id="bestGeneral">
+		<img id="bestGeneralImgA" class="bigGeneralImg"></img>
+		<label id="bestGeneralScoreA" class="generalscore">0</label>
+		<img id="bestGeneralImgB" class="bigGeneralImg"></img>
+		<label id="bestGeneralScoreB" class="generalscore">0</label><br>
+    <div id="bottomSectionCopy">
+      <label id="deckCount2"></label>
+      <input type="button" value="Reset Calculator" id="Reset" onclick="resetCalculator()">
+    </div>
+	</div>
+	<div id="buildADeck">
+		
+			<div id="topSection">
+			<div class="sideways">
+				<label for="cardlist1"><h3>Card 1: </h3></label><input id="cardlist1" name="cardlist1" type="text" list="cards" oninput="calculateCard(0)"/><br><br>
+				<img id="generalimg1a" class="generalImg"></img>
+				<label id="cardlistscore1a" class="generalcardscore">0</label>
+				<img id="generalimg1b" class="generalImg"></img>
+				<label id="cardlistscore1b" class="generalcardscore">0</label><br>
+				<!--<img id="cardtoselect1" class="cardImg"></img>-->
+				<input type="button" value="Select this card." id="cardSelect1" onclick="selectCard(0)">
+			</div>
+			<div class="sideways">
+				<label for="cardlist2"><h3>Card 2: </h3></label><input id="cardlist2" name="card_name" type="text" list="cards" oninput="calculateCard(1)"/><br><br>
+				<img id="generalimg2a" class="generalImg"></img>
+				<label id="cardlistscore2a" class="generalcardscore">0</label>
+				<img id="generalimg2b" class="generalImg"></img>
+				<label id="cardlistscore2b" class="generalcardscore">0</label><br>
+				<!--<img id="cardtoselect2" class="cardImg"></img>-->
+				<input type="button" value="Select this card." id="cardSelect2" onclick="selectCard(1)">
+			</div>
+			<div class="sideways">
+				<label for="cardlist3"><h3>Card 3: </h3></label><input id="cardlist3" name="card_name" type="text" list="cards" oninput="calculateCard(2)"/><br><br>
+				<img id="generalimg3a" class="generalImg"></img>
+				<label id="cardlistscore3a" class="generalcardscore">0</label>
+				<img id="generalimg3b" class="generalImg"></img>
+				<label id="cardlistscore3b" class="generalcardscore">0</label><br>
+				<!--<img id="cardtoselect3" class="cardImg"></img>-->
+				<input type="button" value="Select this card." id="cardSelect3" onclick="selectCard(2)">
+			</div><div class="sideways2"><Strong><br><h2>Decklist:</h2></strong><label id="bestGeneralScoreA2" class="decklist"></label></div><br><br>
+			
+			<datalist id="cards"></datalist>
+			<datalist id="decklist"></datalist>
+		</div>
+		<div class="bottomSection">
+			<label id="deckCount"></label><br><br>
+			<input type="button" value="Reset Calculator" id="Reset" onclick="resetCalculator()" width="200" height="100">
+		</div>
+	</div>
+	<div id="selectFaction">
+		<form>
+			<h1>Select a faction to start...</h1>
+			<br>
+			<input type="button" value="Lyonar" id="Lyonar" class="faction" onclick="selectFaction('Lyonar Kingdoms')">
+			<input type="button" value="Songhai" id="Songhai" class="faction" onclick="selectFaction('Songhai Empire')">
+			<input type="button" value="Vetruvian" id="Vetruvian" class="faction" onclick="selectFaction('Vetruvian Imperium')">
+			<br>
+			<input type="button" value="Abyssian" id="Abyssian" class="faction" onclick="selectFaction('Abyssian Host')">
+			<input type="button" value="Magmar" id="Magmar" class="faction" onclick="selectFaction('Magmar Aspects')">
+			<input type="button" value="Vanar" id="Vanar" class="faction" onclick="selectFaction('Vanar Kindred')">
+			<br>
+		</form>
+		</div><div id="decklistcontainer">
+	
+	<label id="bestGeneralScoreA2" class="decklist"></label></div>
+	</div>
+	
+	<script src="logic.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+body {
+	/*background-color: lightblue;*/
+	background-image: url("images/background.jpg");
+	margin: auto;
+	 padding: 30px;
+	
+}
+#builder
+{
+background-color: white;
+	margin: auto;
+    width: 90%;
+    border: 3px solid black;
+	border-radius: 25px;
+    padding: 10px;
+}
+
+#bestGeneral
+{
+    width: 90%;
+	margin: 20px 35px 20px 35px;
+    padding: 10px;
+}
+
+#buildADeck{
+background-color: lightblue;
+}
+#deckCount{
+	font-size: 24px;
+	font-weight: bold;
+}
+#deckCount2{
+  font-size: 24px;
+  font-weight: bold;
+}
+.sideways
+{
+
+	/*background-color: lightgrey;*/
+	 background-color: lightblue;
+	border: 3px solid black;
+	border-radius: 25px;
+	float: left;
+	margin: 10px 15px 10px 15px;
+	padding: 10px;
+}
+.sideways2
+{
+
+margin:10px 15px 15px 50px;
+	/*background-color: lightgrey;*/
+	 float: left;
+}
+.sidewaysEnd
+{
+	margin: 10px 25px 10px 25px;
+}
+.generalImg
+{
+	width: 50px;
+	height: 50px;
+}
+.bigGeneralImg
+{
+	width: 100px;
+	height: 100px;
+}
+.cardImg
+{
+	width: 50px;
+	height: 50px;
+}
+.bottomSection
+{
+	margin: 20px 35px 0px 35px;
+	padding: 10px;
+	padding: 10px;
+	clear: left;
+}
+#topSection
+{
+/*background-color: lightgrey;*/
+}
+.generalcardscore
+{
+font-size: 24px;
+}
+.generalscore
+{
+font-size: 36px;
+}
+.decklist
+{
+font-size: 14px;
+
+    padding: 10px;
+}
+#decklistcontainer
+{
+
+	margin: auto;
+    width: 90%;
+    padding: 30px;
+}
+#card_name
+{
+	font-size: 12px;
+	width: 200px;
+}
+
+h1{
+font: 36px arial, sans-serif;
+}
+.faction
+{
+	font-size: 36px;
+	width: 200px;
+	height: 200px;
+	color:#FFFFFF;
+	padding: 135px 0px 0px 0px;
+	margin: 10px 5px 10px 5px;
+    background-repeat: no-repeat;
+}
+
+#Lyonar
+{
+    background: url("images/Lyonar Crest.png");
+	background-size: 200px 200px;
+}
+
+#Songhai
+{
+    background: url("images/Songhai Crest.png");
+	background-size: 200px 200px;
+}
+
+#Vetruvian
+{
+    background: url("images/Vetruvian Crest.png");
+	background-size: 200px 200px;
+}
+
+#Abyssian
+{
+    background: url("images/Abyssian Crest.png");
+	background-size: 200px 200px;
+}
+
+#Magmar
+{
+    background: url("images/Magmar Crest.png");
+	background-size: 200px 200px;
+}
+
+#Vanar
+{
+    background: url("images/Vanar Crest.png");
+	background-size: 200px 200px;
+}
